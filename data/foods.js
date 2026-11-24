@@ -19,5 +19,6 @@ window.FOODS = [
   {id:'veggie-salad',name:'彩虹蔬菜沙拉',cuisine:'蔬食',category:'沙拉',price:240,emoji:'🥗',description:'以多種新鮮蔬菜搭配清爽醬汁，口感豐富。',tags:['蔬菜','清爽']},
   {id:'brunch-eggs-benedict',name:'班尼迪克蛋',cuisine:'早午餐',category:'早午餐',price:340,emoji:'🍳',description:'水波蛋、麵包與荷蘭醬的組合，適合悠閒假日。',tags:['早午餐','蛋料理']},
   {id:'hotpot-spicy',name:'麻辣火鍋',cuisine:'台式',category:'火鍋',price:850,emoji:'🍲',description:'香麻帶勁的鍋底搭配肉片與蔬菜，聚餐很合適。',tags:['聚餐','辣']},
-  {id:'japan-omakase',name:'日式無菜單料理',cuisine:'日式',category:'套餐',price:1500,emoji:'🍱',description:'由料理人安排當季餐點，適合想嘗試精緻料理的時候。',tags:['精緻','聚餐']}
+  {id:'japan-omakase',name:'日式無菜單料理',cuisine:'日式',category:'套餐',price:1500,emoji:'🍱',description:'由料理人安排當季餐點，適合想嘗試精緻料理的時候。',tags:['精緻','聚餐']},
+  {id:'france-creme-brulee',name:'法式焦糖烤布蕾',cuisine:'法式',category:'甜點',price:180,emoji:'🍮',description:'表層焦糖酥脆，內層奶香濃郁，適合當作餐後甜點。',tags:['甜點','下午茶']}
 ];
