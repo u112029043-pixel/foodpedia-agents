@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Foodpedia 今天吃什麼？探索世界料理、依預算搜尋，讓美食靈感每天不重複。">
+  <title>Foodpedia｜今天吃什麼？</title><link rel="stylesheet" href="style.css">
+  <script defer src="data/foods.js"></script><script defer src="script.js"></script>
+</head>
+<body>
+<header class="topbar"><div class="container nav"><a class="brand" href="./" aria-label="Foodpedia 首頁">🍊 Foodpedia<span> / 美食百科</span></a><a href="#explore" class="nav-link">探索料理 ↓</a></div></header>
+<main>
+<section class="hero"><div class="container hero-inner"><div class="hero-copy"><div class="eyebrow">✦ YOUR DAILY FOOD INSPIRATION</div><h1>今天吃什麼<span>？</span><br>讓美味替你決定。</h1><p>從街頭小吃到世界料理，依照心情與預算，找到今天剛剛好的那一餐。</p><div class="hero-actions"><a class="btn primary" href="#explore">開始探索 <span aria-hidden="true">↗</span></a><button id="heroRandom" class="btn secondary" type="button">🎲 幫我挑一餐</button></div><div class="mini-stat"><strong id="foodCount">20</strong> 道美食靈感 · 持續更新中</div></div><div class="hero-art" aria-label="料理插畫"><div class="plate"><span>🍜</span></div><div class="float-emoji one">🥑</div><div class="float-emoji two">🍕</div><div class="float-emoji three">🍓</div><div class="art-caption">GOOD FOOD, GOOD MOOD ✳</div></div></div></section>
+<section class="explore container" id="explore"><div class="section-top"><div><div class="eyebrow orange">FIND YOUR FAVORITE</div><h2>探索美食靈感 <span>✳</span></h2><p>想吃什麼都可以，慢慢挑，或交給運氣。</p></div><button class="btn random" id="randomBtn" type="button">🎲 隨機推薦</button></div>
+<div class="filters"><label class="field search"><span>搜尋料理</span><input id="searchInput" type="search" placeholder="例如：拉麵、咖哩、甜點…" autocomplete="off"></label><label class="field"><span>料理國家／風格</span><select id="cuisineSelect"><option value="all">全部料理</option></select></label><label class="field"><span>餐點類型</span><select id="categorySelect"><option value="all">全部類型</option></select></label><label class="field"><span>預算範圍</span><select id="budgetSelect"><option value="all">不限預算</option><option value="0-100">NT$ 0–100</option><option value="101-200">NT$ 101–200</option><option value="201-400">NT$ 201–400</option><option value="401-800">NT$ 401–800</option><option value="801-1000">NT$ 801–1000</option><option value="1001+">NT$ 1001 以上</option></select></label></div>
+<div class="results-head"><p id="resultCount" aria-live="polite"></p><button class="reset" id="resetBtn" type="button">清除篩選 ↺</button></div><div id="foodGrid" class="food-grid"></div><div id="emptyState" class="empty" hidden><div>🍽️</div><h3>這次沒有找到符合條件的料理</h3><p>試試其他分類或放寬預算吧！</p></div></section>
+<section class="about"><div class="container about-inner"><div><div class="eyebrow orange">BUILT TO GROW</div><h2>一份資料，無限美味。</h2><p>每一道料理都遵守相同的資料格式。未來只要按照 AGENTS.md 新增料理，網站就會自動產生卡片與篩選選項，不需要重做頁面。</p></div><div class="about-icon">📖 <span>＋</span> 🍱</div></div></section>
+</main><footer><div class="container footer-inner"><span>🍊 Foodpedia · 今天吃什麼？</span><span>課堂專案展示｜價格為示意參考價，非即時報價</span></div></footer>
+<dialog id="foodDialog" aria-labelledby="dialogTitle"><div class="dialog-top"><span id="dialogCuisine"></span><button type="button" id="closeDialog" class="close" aria-label="關閉料理介紹">✕</button></div><div class="dialog-emoji" id="dialogEmoji"></div><h2 id="dialogTitle"></h2><p id="dialogDescription"></p><div id="dialogTags" class="tags"></div><div class="dialog-bottom"><span id="dialogCategory"></span><strong id="dialogPrice"></strong></div></dialog>
+</body></html>
